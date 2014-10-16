@@ -521,18 +521,24 @@ else if get_stage("%(bcb_dev)s", "stage") == "3/3" then
   if OPTIONS.wipe_user_data:
     script.FormatPartition("/data")
 
-  script.Print("**********************************************");
-  script.Print("* ____                       _        _ _    *");
-  script.Print("*| __ )  ___  __ _ _ __  ___| |_ __ _| | | __*");
-  script.Print("*|  _ \ / _ \/ _` | '_ \/ __| __/ _` | | |/ /*");
-  script.Print("*| |_) |  __/ (_| | | | \__ \ || (_| | |   < *");
-  script.Print("*|____/ \___|\__,_|_| |_|___/\__\__,_|_|_|\_\*");
-  script.Print("*						   *");
-  script.Print("**********************************************");
+  script.Print("*****************************************************************");
+  script.Print("*    ________.__              .__          ____  __.       __   *");
+  script.Print("*  /  _____/|__| ____   ____ |  |   ____ |    |/ _|____ _/  |_  *");
+  script.Print("* /   \  ___|  |/ ___\ / ___\|  | _/ __ \|      < \__  \\   __\ *");
+  script.Print("* \    \_\  \  / /_/  > /_/  >  |_\  ___/|    |  \ / __ \|  |   *");
+  script.Print("*  \______  /__\___  /\___  /|____/\___  >____|__ (____  /__|   *");
+  script.Print("*         \/  /_____//_____/           \/        \/    \/       *");
+  script.Print("*              __________                                       *");
+  script.Print("*              \______   \ ____   _____                         *");
+  script.Print("*               |       _//  _ \ /     \                        *");
+  script.Print("*               |    |   (  <_> )  Y Y  \                       *");
+  script.Print("*               |____|_  /\____/|__|_|  /                       *");
+  script.Print("*                      \/             \/                        *");
+  script.Print("*****************************************************************");
 
   build = GetBuildProp("ro.build.date", OPTIONS.info_dict)
   script.Print("******************************************");
-  script.Print("************  BEANSTALK ROM  *************");
+  script.Print("************  GiggleKat ROM  *************");
   script.Print("******************************************");
   script.Print("*   Compiled: %s"%(build));
 
