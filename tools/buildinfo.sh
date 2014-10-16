@@ -43,7 +43,7 @@ if [ "$TARGET_UNIFIED_DEVICE" == "" ] ; then
 fi
 echo "ro.build.characteristics=$TARGET_AAPT_CHARACTERISTICS"
 
-# Bliss Properties
-echo "ro.bliss.device=$BLISS_DEVICE"
+# GiggleKat Properties
+echo "ro.gigglekat.device=$GIGGLEKAT_DEVICE"
 
 echo "# end build properties"
